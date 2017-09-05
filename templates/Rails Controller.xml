@@ -1,0 +1,189 @@
+<templateSet group="Rails Controller">
+  <template name="flash" value="flash[:$NOTICE$] = &quot;$MESSAGE$&quot;" description="Creates a flash" toReformat="true" toShortenFQNames="true">
+    <variable name="NOTICE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ra" value="render :action =&gt; &quot;$ACTION$&quot;$END$&#10;&#10;" description="render with action" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ral" value="render :action =&gt; &quot;$ACTION$&quot;, :layout =&gt; &quot;$LAYOUT_NAME$&quot;$END$" description="render with action and layout" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rea" value="redirect_to :action =&gt; &quot;$ACTION$&quot;$END$" description="redirect_to with action" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="reai" value="redirect_to :action =&gt; &quot;$ACTION$&quot;, :id =&gt; $ID$" description="redirect_to with action and id" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rec" value="redirect_to :controller =&gt; &quot;$CONTROLLER$&quot;$END$" description="redirect_to with controller" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTROLLER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="reca" value="redirect_to :controller =&gt; &quot;$CONTROLLER$&quot;, :action =&gt; &quot;$ACTION$&quot;$END$" description="redirect_to with controller and action" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTROLLER" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="recai" value="redirect_to :controller =&gt; &quot;$CONTROLLER$&quot;, :action =&gt; &quot;$ACTION$&quot;, :id =&gt; $ID$" description="redirect_to with controller, action, and id" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTROLLER" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rf" value="render :file =&gt; &quot;$FILE_PATH$&quot;" description="render file" toReformat="true" toShortenFQNames="true">
+    <variable name="FILE_PATH" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rfu" value="render :file =&gt; &quot;$FILE_PATH$&quot;, :use_full_path =&gt; $USE_FULL_PATH$" description="render file with use_full_path" toReformat="true" toShortenFQNames="true">
+    <variable name="FILE_PATH" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="USE_FULL_PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ri" value="render :inline =&gt; &quot;&lt;%= '$MESSAGE$' %&gt;&quot;" description="render inline" toReformat="true" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ril" value="render :inline =&gt; &quot;&lt;%= '$MESSAGE$' %&gt;&quot;, :locals =&gt; { $NAME$ =&gt; &quot;$VALUE$&quot; }" description="render inline with locals" toReformat="true" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rit" value="render :inline =&gt; &quot;&lt;%= '$MESSAGE$' %&gt;&quot;, :type =&gt; $RXML$" description="render inline with type" toReformat="true" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RXML" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rl" value="render :layout =&gt; &quot;$LAYOUT_NAME$&quot;$END$" description="render layout" toReformat="true" toShortenFQNames="true">
+    <variable name="LAYOUT_NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rn" value="render :nothing =&gt; $TRUE$" description="render with nothing" toReformat="true" toShortenFQNames="true">
+    <variable name="TRUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rns" value="render :nothing =&gt; $TRUE$, :status =&gt; $HTTP_STATUS$" description="render with nothing and status" toReformat="true" toShortenFQNames="true">
+    <variable name="TRUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HTTP_STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rp" value="render :partial =&gt; &quot;$ITEM$&quot;" description="render partial" toReformat="true" toShortenFQNames="true">
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rpc" value="render :partial =&gt; &quot;$ITEM$&quot;, :collection =&gt; $ITEMS$" description="render partial with collection" toReformat="true" toShortenFQNames="true">
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rpl" value="render :partial =&gt; &quot;$ITEM$&quot;, :locals =&gt; { :$NAME$ =&gt; &quot;$VALUE$&quot; }" description="render partial with locals" toReformat="true" toShortenFQNames="true">
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rpo" value="render :partial =&gt; &quot;$ITEM$&quot;, :object =&gt; $OBJ$" description="render partial with object" toReformat="true" toShortenFQNames="true">
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rps" value="render :partial =&gt; &quot;$ITEM$&quot;, :status =&gt; $HTTP_STATUS$" description="render partial with status" toReformat="true" toShortenFQNames="true">
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="HTTP_STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rt" value="render :text =&gt; &quot;$TEXT$&quot;" description="render text" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rtl" value="render :text =&gt; &quot;$TEXT$&quot;, :layout =&gt; &quot;$LAYOUT_NAME$&quot;" description="render text with layout name" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rtlt" value="render :text =&gt; &quot;$TEXT$&quot;, :layout =&gt; $TRUE$" description="render text with layout" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TRUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rts" value="render :text =&gt; &quot;$TEXT$&quot;, :status =&gt; $HTTP_STATUS$" description="render text with status" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HTTP_STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="s" value="session[:$USER$]$END$" description="session" toReformat="true" toShortenFQNames="true">
+    <variable name="USER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="status" value="status: :$VAR1$" description="status" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="enum(&quot;continue&quot;, &quot;switching_protocols&quot;, &quot;processing&quot;, &quot;ok&quot;, &quot;created&quot;, &quot;accepted&quot;, &quot;non_authoritative_information&quot;, &quot;no_content&quot;, &quot;reset_content&quot;, &quot;partial_content&quot;, &quot;reset_content&quot;, &quot;partial_content&quot;, &quot;multi_status&quot;, &quot;already_reported&quot;, &quot;im_used&quot;, &quot;multiple_choices&quot;, &quot;moved_permanently&quot;, &quot;found&quot;, &quot;see_other&quot;, &quot;not_modified&quot;, &quot;use_proxy&quot;, &quot;reserved&quot;, &quot;temporary_redirect&quot;, &quot;permanent_redirect&quot;, &quot;bad_request&quot;, &quot;unauthorized&quot;, &quot;payment_required&quot;, &quot;forbidden&quot;, &quot;not_found&quot;, &quot;not_found&quot;, &quot;method_not_allowed&quot;, &quot;not_acceptable&quot;, &quot;proxy_authentication_required&quot;, &quot;request_timeout&quot;, &quot;conflict&quot;, &quot;gone&quot;, &quot;length_required&quot;, &quot;precondition_failed&quot;, &quot;request_entity_too_large&quot;, &quot;request_uri_too_long&quot;, &quot;unsupported_media_type&quot;, &quot;unsupported_media_type&quot;, &quot;requested_range_not_satisfiable&quot;, &quot;expectation_failed&quot;, &quot;unprocessable_entity&quot;, &quot;locked&quot;, &quot;failed_dependency&quot;, &quot;upgrade_required&quot;, &quot;precondition_required&quot;, &quot;too_many_requests&quot;, &quot;request_header_fields_too_large&quot;, &quot;internal_server_error&quot;, &quot;not_implemented&quot;, &quot;bad_gateway&quot;, &quot;service_unavailable&quot;, &quot;gateway_timeout&quot;, &quot;http_version_not_supported&quot;, &quot;variant_also_negotiates&quot;, &quot;insufficient_storage&quot;, &quot;loop_detected&quot;, &quot;not_extended&quot;, &quot;network_authentication_required&quot; )" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="head" value="head :$VAR1$" description="status" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="enum(&quot;continue&quot;, &quot;switching_protocols&quot;, &quot;processing&quot;, &quot;ok&quot;, &quot;created&quot;, &quot;accepted&quot;, &quot;non_authoritative_information&quot;, &quot;no_content&quot;, &quot;reset_content&quot;, &quot;partial_content&quot;, &quot;reset_content&quot;, &quot;partial_content&quot;, &quot;multi_status&quot;, &quot;already_reported&quot;, &quot;im_used&quot;, &quot;multiple_choices&quot;, &quot;moved_permanently&quot;, &quot;found&quot;, &quot;see_other&quot;, &quot;not_modified&quot;, &quot;use_proxy&quot;, &quot;reserved&quot;, &quot;temporary_redirect&quot;, &quot;permanent_redirect&quot;, &quot;bad_request&quot;, &quot;unauthorized&quot;, &quot;payment_required&quot;, &quot;forbidden&quot;, &quot;not_found&quot;, &quot;not_found&quot;, &quot;method_not_allowed&quot;, &quot;not_acceptable&quot;, &quot;proxy_authentication_required&quot;, &quot;request_timeout&quot;, &quot;conflict&quot;, &quot;gone&quot;, &quot;length_required&quot;, &quot;precondition_failed&quot;, &quot;request_entity_too_large&quot;, &quot;request_uri_too_long&quot;, &quot;unsupported_media_type&quot;, &quot;unsupported_media_type&quot;, &quot;requested_range_not_satisfiable&quot;, &quot;expectation_failed&quot;, &quot;unprocessable_entity&quot;, &quot;locked&quot;, &quot;failed_dependency&quot;, &quot;upgrade_required&quot;, &quot;precondition_required&quot;, &quot;too_many_requests&quot;, &quot;request_header_fields_too_large&quot;, &quot;internal_server_error&quot;, &quot;not_implemented&quot;, &quot;bad_gateway&quot;, &quot;service_unavailable&quot;, &quot;gateway_timeout&quot;, &quot;http_version_not_supported&quot;, &quot;variant_also_negotiates&quot;, &quot;insufficient_storage&quot;, &quot;loop_detected&quot;, &quot;not_extended&quot;, &quot;network_authentication_required&quot; )" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+</templateSet>

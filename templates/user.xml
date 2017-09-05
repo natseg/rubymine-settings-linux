@@ -1,0 +1,16 @@
+<templateSet group="user">
+  <template name="cnfs" value="className={ fontStyle.$class$ }" description="className fontStyle" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="enum(&quot;display3&quot;, &quot;display2&quot;, &quot;display1&quot;, &quot;headline&quot;, &quot;title&quot;, &quot;subheading&quot;, &quot;body2&quot;, &quot;body&quot;, &quot;caption&quot;, &quot;button&quot;, &quot;menu&quot;, &quot;unstyledLink&quot;, &quot;styledLink&quot;, &quot;styledLink2&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="svgprefix" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;" description="svg prefix" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

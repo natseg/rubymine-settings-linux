@@ -1,0 +1,39 @@
+<templateSet group="JavaScript Surround">
+  <template name="spwei" value="$SELECTION$&#10;} else $SELECTION$$END$" description="duplicate to else if" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sif" value="if ($CONDIITON$) {&#10;  $SELECTION$&#10;}" description="if clause" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDIITON" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sife" value="if ($condition$) {&#10;  $END$&#10;} else {&#10;  $SELECTION$&#10;}" description="else clause" toReformat="true" toShortenFQNames="true">
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sifeic" value="if ($condition$) {&#10;  $SELECTION$&#10;} else {&#10;  $END$&#10;}" description="if else clause" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="is" value="`${$SELECTION$} ${$other$}`" description="interpolated string" toReformat="true" toShortenFQNames="true">
+    <variable name="other" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="cc" value="/* $comment$ &gt;&gt;&gt;&gt;&gt; */&#10;$SELECTION$&#10;/* &lt;&lt;&lt;&lt;&lt;&lt; $comment$ */" description="comprehension comment" toReformat="false" toShortenFQNames="true">
+    <variable name="comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

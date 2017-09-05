@@ -1,0 +1,174 @@
+<templateSet group="JSX">
+  <template name="cn" value="className={ $value$ } " description="className" toReformat="false" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="lvr" value="$var$={ $var$ }$END$" description="local variable reference" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="." value="{ $END$ }" description="JSX value" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSX_HTML" value="true" />
+    </context>
+  </template>
+  <template name="sv" value="$name$='$value$' " description="string value" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="ev" value="$name$={ $value$ } " description="expression value" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="tsl" value="&lt;$tag$ $END$/&gt;&#10;" description="tag single line" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="sct" value="&lt;$tag$ &#10;  $END$&#10;/&gt;&#10;" description="self closing tag" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="mt" value="&lt;$tag$ $classname$&gt;&#10;  $END$&#10;&lt;/$tag$&gt;" description="tag multiline" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="classname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name=".mt" value="&lt;$tag$ $END$&gt;&#10;  $SELECTION$&#10;&lt;/$tag$&gt;&#10;" description="surround tag multiline" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="silt" value="&lt;$tag$ $END$&gt; $SELECTION$ &lt;/$tag$&gt;" description="inline tag" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="ilsct" value="&lt;$tag$ $END$/&gt;" description="inline self closing tag" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="sdiv" value="&lt;div $END$&gt;&#10;  $SELECTION$&#10;&lt;/div&gt;&#10;" description="surround with div" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="div" value="&lt;div $classname$&gt;&#10;  $END$&#10;&lt;/div&gt;" description="div" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="sspan" value="&lt;span $END$&gt; $SELECTION$ &lt;/span&gt;" description="surround span" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="span" value="&lt;span $classname$&gt;&#10;  $END$&#10;&lt;/span&gt;" description="span" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="li" value="&lt;li $classname$&gt;&#10;  $END$&#10;&lt;/li&gt;" description="li" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="sli" value="&lt;li $END$&gt;&#10;  $SELECTION$&#10;&lt;/li&gt;&#10;" description="surround with li" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ul" value="&lt;ul $classname$&gt;&#10;  $END$&#10;&lt;/ul&gt;" description="ul" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="rh" value="{ this.$renderHelper$() }" description="render helper" toReformat="false" toShortenFQNames="true">
+    <variable name="renderHelper" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+    </context>
+  </template>
+  <template name="key" value="key={ $key$ }" description="key" toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+    </context>
+  </template>
+  <template name="ov" value="$name$={ { $value$ } }$END$" description="object value" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="cns" value="className={ style.$value$ } " description="className style" toReformat="false" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="on" value="on$event$={ $handler$ }" description="on event handler" toReformat="false" toShortenFQNames="true">
+    <variable name="event" expression="enum(&quot;Copy&quot;, &quot;Cut&quot;, &quot;Paste&quot;, &quot;KeyDown&quot;, &quot;KeyPress&quot;, &quot;KeyUp&quot;, &quot;Focus&quot;, &quot;Blur&quot;, &quot;Change&quot;, &quot;Input&quot;, &quot;Submit&quot;, &quot;Click&quot;, &quot;CtextMenu&quot;, &quot;DoubleClick&quot;, &quot;Drag&quot;, &quot;DragEnd&quot;, &quot;DragEnter&quot;, &quot;DragExit&quot;, &quot;DragLeave&quot;, &quot;DragOver&quot;, &quot;DragStart&quot;, &quot;Drop&quot;, &quot;MouseDown&quot;, &quot;MouseEnter&quot;, &quot;MouseLeave&quot;, &quot;MouseMove&quot;, &quot;MouseOut&quot;, &quot;MouseOver&quot;, &quot;MouseUp&quot;, &quot;Select&quot;, &quot;TouchCancel&quot;, &quot;TouchEnd&quot;, &quot;TouchMove&quot;, &quot;TouchStart&quot;, &quot;Scroll&quot;, &quot;Wheel&quot;) " defaultValue="" alwaysStopAt="true" />
+    <variable name="handler" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

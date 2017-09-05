@@ -1,0 +1,454 @@
+<templateSet group="Rails HAML">
+  <template name="adlt" value="= audio_discovery_link_tag rel: '$VAR$', type: $VAR2$, title: $VAR3$" description="auto_discovery_link_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="jit" value="= javascript_include_tag '$VAR$'" description="javascript_include_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="slt" value="= stylesheet_link_tag $VAR$" description="stylesheet_link_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="tit" value="= image_tag '$VAR$'$VAR2$" description="image_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="vt" value="= video_tag '$VAR$'" description="video_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="at" value="= audio_tag '$VAR$'" description="audio_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="yi" value="= yield" description="yield" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="conf" value="= content_for :$VAR$ do&#10;  $END$&#10;" description="content_for" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="ren" value="= render $VAR$" description="render" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="enum('partial:', 'layout:', 'object:', 'collection:', 'as:', 'spacer_template:' )" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co" value="$VAR$_counter" description="_counter" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="ft" value="= form_tag $VAR1$ do&#10;  $END$&#10;" description="form_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="lt" value="= label_tag $VAR$" description="label_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="tft" value="= text_field_tag $VAR$" description="text_field_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sut" value="= submit_tag $VAR$" description="submit_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="cbt" value="= check_box_tag $VAR$" description="check_box_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="rbt" value="= radio_button_tag :$VAR$, &quot;$VAR$&quot;" description="radio_button_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="tat" value="= text_area_tag :$VAR$, &quot;$VAR$&quot;" description="text_area_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="pft" value="= password_field_tag :$VAR$" description="password_field_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="hft" value="= hidden_field_tag :$VAR$, &quot;$VAR2$&quot;" description="hidden_field_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sft" value="= search_field :$VAR$, :$VAR$" description="search_field_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="df" value="= date_field :$VAR$, :$VAR2$" description="date_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="mf" value="= month_field :$VAR$, :$VAR2$" description="month_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="wf" value="= week_field :$VAR$, :$VAR2$" description="week_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="uf" value="= url_field :$VAR$, :$VAR2$" description="url_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="cf" value="= color_field :$VAR$, :$VAR2$" description="color_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="ftif" value="= f.time_field :$VAR$" description="time_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="nf" value="= number_field :$VAR$, :$VAR2$" description="number_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="rf" value="= range_field :$VAR$, :$VAR2$" description="range_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="ftf" value="= f.label :$VAR$&#10;= f.text_field :$VAR2$" description="text_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="VAR2" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="fifor" value="= fields_for $VAR1$ do |f|&#10;  $END$&#10;" description="fields_for" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="st" value=" options = options_for_select([[$VAR$]]$VAR2$)&#10;= f.select($VAR3$, options)" description="select_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="cs" value="= collection_select(:$VAR1$, :$VAR2$, $VAR3$, :$VAR4$, :$VAR5$)" description="collection_select" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;instance_name&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;field_name&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;active_relation_instance&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;value_attr&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;text_attr&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="fts" value="= f.time_select $VAR$" description="f.time_select" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sd" value="= select_date $VAR$" description="select_date" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sti" value="= select_time $VAR$" description="select_time" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sdt" value="= select_datetime $VAR$" description="select_datetime" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sy" value="= select_year $VAR$" description="select_year" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sm" value="= select_month $VAR$" description="select_month" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sda" value="= select_day $VAR$" description="select_day" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sh" value="= select_hour $VAR$" description="select_hour" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="smo" value="= select_minute $VAR$" description="select_minute" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="ss" value="= select_second $VAR$" description="select_second" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="fpf" value="= f.label :$VAR$&#10;= f.password_field :$VAR2$" description="f.password_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;password&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="VAR2" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sif" value="- if $VAR1$&#10;  $SELECTION$&#10;" description="if" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sifel" value="- if $VAR1$&#10;  $SELECTION$&#10;- else&#10;  $END$&#10;" description="if else" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sun" value=" - unless $VAR1$&#10;  $SELECTION$&#10;" description="unless" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="itreturnsheader" value="it &quot;returns $VAR2$ header&quot; do&#10;  expect(response).to have_http_status(:$VAR1$)&#10;end" description="it returns header" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="capitalize(underscoresToSpaces(VAR1))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ffif" value="= f.file_field $VAR$" description="f.file_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="sub" value="= submit_tag '$VAR$'" description="submit_Tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="lit" value="= link_to $VAR$" description="link_to" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="taiw" value="= time_ago_in_words($time$)" description="time_ago_in_words" toReformat="false" toShortenFQNames="true">
+    <variable name="time" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c1" value="col-sm-1" description=".col-sm-1" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c10" value="col-sm-10" description=".col-sm-10" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c11" value="col-sm-11" description=".col-sm-11" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c12" value="col-sm-12" description=".col-sm-12" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c2" value="col-sm-2" description=".col-sm-2" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c3" value="col-sm-3" description=".col-sm-3" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c4" value="col-sm-4" description=".col-sm-4" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c5" value="col-sm-5" description=".col-sm-5" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c6" value="col-sm-6" description=".col-sm-6" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c7" value="col-sm-7" description=".col-sm-7" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c8" value="col-sm-8" description=".col-sm-8" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="c9" value="col-sm-9" description=".col-sm-9" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co1" value="col-sm-offset-1" description=".col-sm-offset-1" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co10" value="col-sm-offset-10" description=".col-sm-offset-10" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co11" value="col-sm-offset-11" description=".col-sm-offset-11" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co2" value="col-sm-offset-2" description=".col-sm-offset-2" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co3" value="col-sm-offset-3" description=".col-sm-offset-3" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co4" value="col-sm-offset-4" description=".col-sm-offset-4" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co5" value="col-sm-offset-5" description=".col-sm-offset-5" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co6" value="col-sm-offset-6" description=".col-sm-offset-6" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co7" value="col-sm-offset-7" description=".col-sm-offset-7" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co8" value="col-sm-offset-8" description=".col-sm-offset-8" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="co9" value="col-sm-offset-9" description=".col-sm-offset-9" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="ffor" value="= form_for $VAR1$ do |f|&#10;  $END$&#10;" description="form_for" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+  <template name="bto" value="= button_to $VAR$" description="button_to" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="true" />
+    </context>
+  </template>
+</templateSet>

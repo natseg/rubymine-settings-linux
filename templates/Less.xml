@@ -1,0 +1,30 @@
+<templateSet group="Less">
+  <template name="mma" value="@media (max-width: $maxWidth$) {&#10;  $END$&#10;}" description="media max-width" toReformat="true" toShortenFQNames="true">
+    <variable name="maxWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="mmi" value="@media (min-width: $maxWidth$) {&#10;  $END$&#10;}" description="media min-width" toReformat="true" toShortenFQNames="true">
+    <variable name="maxWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="mmam" value="@media (min-width: $minWidth$) and (max-width: $maxWidth$) {&#10;  $END$&#10;}" description="media max and min-width" toReformat="false" toShortenFQNames="true">
+    <variable name="minWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="maxWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="ms" value="//                                                   @tiny-layout-max          @small-layout-max      @medium-layout-max        @large-layout-max&#10;//                                                        425px                     600px                  768px                      950px&#10;//---------------------------------------------------------|-------------------------|-----------------------|-------------------------|---------&#10;//                                                          |@small-layout-min        |@medium-layout-min     |@large-layout-min         |@huge-layout-min&#10;$END$" description="media layout sizes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+</templateSet>

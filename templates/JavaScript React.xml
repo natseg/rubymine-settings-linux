@@ -1,0 +1,293 @@
+<templateSet group="JavaScript React">
+  <template name="refactions" value="'use strict';&#10;&#10;import Reflux from 'reflux';&#10;&#10;var actions = Reflux.createActions({&#10;  $END$&#10;});&#10;&#10;export default actions;&#10;" description="reflux actions" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cdu" value="componentDidUpdate(){&#10;  $END$&#10;}" description="componentDidUpdate" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="cwm" value="componentWillMount(){&#10;  $END$    &#10;}&#10;" description="componentWillMount" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="cwu" value="componentWillUpdate($values$){&#10;  $END$      &#10;}&#10;" description="componentWillUpdate" toReformat="false" toShortenFQNames="true">
+    <variable name="values" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="pt" value="$name$: PropTypes.$type$.isRequired," description="PropType" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="enum(&quot;string&quot;, &quot;arrayOf&quot;, &quot;array&quot;, &quot;bool&quot;, &quot;func&quot;, &quot;number&quot;, &quot;object&quot;, &quot;node&quot;, &quot;element&quot;, &quot;instanceOf&quot;, &quot;oneOf&quot;, &quot;oneOfType&quot;, &quot;objectOf&quot;, &quot;shape&quot;, &quot;any&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="animcomponent" value="&lt;ReactCSSTransitionGroup&#10;  transitionName={ {&#10;    enter: $style$.$class$Enter,&#10;    enterActive: $style$.$class$EnterActive,&#10;    leave: $style$.$class$Leave,&#10;    leaveActive: $style$.$class$LeaveActive,&#10;    appear: $style$.$class$Enter,&#10;    appearActive: $style$.$class$EnterActive&#10;  } }&#10;  transitionAppear={true}&#10;  transitionEnterTimeout={$enterTimeout$}&#10;  transitionLeaveTimeout={$leaveTimeout$}&#10;  transitionAppearTimeout={$enterTimeout$}&#10;  &gt;&#10;&#10;  $END$&#10;&#10;&lt;/ReactCSSTransitionGroup&gt;" description="React animation component" toReformat="true" toShortenFQNames="true">
+    <variable name="style" expression="" defaultValue="&quot;style&quot;" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="enterTimeout" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="leaveTimeout" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+    </context>
+  </template>
+  <template name="refstore" value="'use strict';&#10;&#10;import Reflux from 'reflux';&#10;import {$immutable$} from 'immutable';&#10;&#10;import Actions from './actions/$actions$Actions';&#10;&#10;var $var$ = $value$;&#10;&#10;var $store$ = Reflux.createStore({&#10;  listenables: [Actions],&#10;&#10;  getInitialState: function(){&#10;    return({$var$});&#10;  },&#10;&#10;  get$capitaliseVar$: function(){&#10;    return($var$);&#10;  },&#10;&#10;  $END$&#10;});&#10;&#10;export default $store$;&#10;" description="reflux store" toReformat="true" toShortenFQNames="true">
+    <variable name="immutable" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="actions" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="store" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <variable name="capitaliseVar" expression="capitalize(var)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="bt" value="this.$var1$ = this.$var1$.bind(this);" description="bind this" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="classcomp" value="'use strict';&#10;&#10;import React, { PropTypes, Component } from 'react';&#10;&#10;class $COMPONENT_NAME$ extends Component {&#10;&#10;  render() {&#10;    $END$  &#10;  }&#10;&#10;}&#10;&#10;$COMPONENT_NAME$.propTypes = {&#10;&#10;};&#10;&#10;$COMPONENT_NAME$.defaultProps = {&#10;&#10;};&#10;&#10;module.exports = $COMPONENT_NAME$;&#10;" description="React ES6 Class component" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="context" value="const { $vars$ } = this.context;" description="context" toReformat="false" toShortenFQNames="true">
+    <variable name="vars" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="props" value="const { $vars$ } = this.props;" description="props" toReformat="false" toShortenFQNames="true">
+    <variable name="vars" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ss" value="this.setState({&#10;  $END$     &#10;});" description="setState" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="state" value="const { $var$ } = this.state;" description="state" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="const" value="constructor(props, context) {&#10;  super(props, context);&#10;  &#10;  this.state = {&#10;    $END$  &#10;  };&#10;}&#10;" description="constructor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="dp" value="$name$: ($params$) =&gt; dispatch($action$)," description="Dispatch prop" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="fd" value="$class$.fetchData = (dispatch) =&gt; {&#10;  return dispatch($END$);&#10;};" description="fetchData" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="pts" value="$name$: PropTypes.string.isRequired,$END$" description="PropType string" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="ptf" value="$name$: PropTypes.func.isRequired,$END$" description="PropType function" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="ptsh" value="$name$: PropTypes.shape({&#10;  $END$&#10;}).isRequired,&#10;" description="PropType shape" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="dpds" value="dataStatus: { }$END$" description="default prop dataStatus" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="dpes" value="$name$: ''$END$" description="default prop empty string" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptb" value="$name$: PropTypes.bool.isRequired,$END$" description="PropType bool" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="ptn" value="$name$: PropTypes.number.isRequired,$END$" description="PropType number" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="cdmdsc" value="componentDidMount(){&#10;  const { dataStatus: { status } } = this.props;&#10;&#10;  if (!status) {&#10;    const { $func$$additional$ } = this.props;&#10;    $func$($identifier$);&#10;  }&#10;}&#10;" description="componentDidMount dataStatus check" toReformat="false" toShortenFQNames="true">
+    <variable name="func" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="additional" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="identifier" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="dspt" value="dataStatus: PropTypes.shape({&#10;  status: PropTypes.string,&#10;  &#10;  error: PropTypes.shape({&#10;    type: PropTypes.string,&#10;    code: PropTypes.number,&#10;    status: PropTypes.number,&#10;    message: PropTypes.string,&#10;    fields: PropTypes.object&#10;  })&#10;})" description="dataStatus propType" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="pto" value="$name$: PropTypes.object.isRequired,$END$" description="PropType object" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="ct" value="$component$.contextTypes = {&#10;  $END$&#10;};&#10;" description="contextTypes" toReformat="false" toShortenFQNames="true">
+    <variable name="component" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="rspt" value="router: routerShape" description="routerShape propType" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="lspt" value="location: locationShape" description="locationShape proptype" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="cdm" value="componentDidMount(){&#10;  $END$      &#10;}&#10;" description="componentWillUpdate" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="ipt" value="indexes: PropTypes.arrayOf(PropTypes.string)" description="indexes propTypes" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="pta" value="indexes: PropTypes.arrayOf($END$).isRequired," description="propType array" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="cpt" value="children: PropTypes.node" description="children prop types" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="dfpt" value="dataFormat: PropTypes.string$END$" description="dataFormat PropType" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="dpeo" value="$name$: { }" description="default prop empty object" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="cwrp" value="componentWillReceiveProps(nextProps){&#10;  $END$&#10;}" description="componentWillReceiveProps" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="gc" value="getComponents(partialNextState, callback) {&#10;&#10;  require.ensure([], function(require) {&#10;    callback(null, require('$END$'));&#10;  });&#10;&#10;}" description="getComponents" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="gir" value="getIndexRoute(partialNextState, callback) {&#10;&#10;  require.ensure([], function(require) {&#10;    callback(null, {&#10;      component: require('$END$')&#10;    });&#10;  });&#10;&#10;}" description="getIndexRoute" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="gcr" value="getChildRoutes(partialNextState, callback) {&#10;&#10;  require.ensure([], function(require) {&#10;    callback(null, [&#10;      $END$&#10;    ]);&#10;  });&#10;&#10;}" description="getChildRoutes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="ro" value="{&#10;  path: '$PATH$',&#10;  component: require('$FILE_PATH$')&#10;}$END$" description="route object" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILE_PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+</templateSet>

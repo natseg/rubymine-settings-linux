@@ -1,0 +1,87 @@
+<templateSet group="CoffeeScript">
+  <template name="rbs" value="{$components$} = require('react-bootstrap')" description="React Bootstrap Include" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="components" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="lin" value="$libname$ = require('./$liblocation$')" description="Local Include" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="libname" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="liblocation" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="lib" value="$components$ = require('$componentName$')" description="Node Library" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="components" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="componentName" expression="decapitalize(components)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="splat" value="{$attrList$} = $target$" description="Splat" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="attrList" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="_col" value="_.$method$($target$,$END$)" description="Underscore Collection" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="method" expression="enum(&quot;each&quot;, &quot;map&quot;, &quot;reduce&quot;, &quot;reduceRight&quot;, &quot;find&quot;, &quot;filter&quot;, &quot;where&quot;, &quot;findWhere&quot;, &quot;reject&quot;, &quot;every&quot;, &quot;some&quot;, &quot;contains&quot;, &quot;invoke&quot;, &quot;pluck&quot;, &quot;max&quot;, &quot;min&quot;, &quot;sortBy&quot;, &quot;groupBy&quot;, &quot;indexBy&quot;, &quot;countBy&quot;, &quot;shuffle&quot;, &quot;sample&quot;, &quot;toArray&quot;, &quot;size&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="_arr" value="_.$method$($target$, $END$)" description="Underscore Array" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="method" expression="enum(&quot;first&quot;, &quot;initial&quot;, &quot;last&quot;, &quot;rest&quot;, &quot;compact&quot;, &quot;flatten&quot;, &quot;without&quot;, &quot;partition&quot;, &quot;union&quot;, &quot;intersection&quot;, &quot;difference&quot;, &quot;uniq&quot;, &quot;zip&quot;, &quot;object&quot;, &quot;indexOf&quot;, &quot;lastIndexOf&quot;, &quot;sortedIndex&quot;, &quot;range&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="_func" value="_.$method$($target$, $END$)" description="Underscore Functions" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="method" expression="enum(&quot;bind&quot;, &quot;bindAll&quot;, &quot;partial&quot;, &quot;memoize&quot;, &quot;delay&quot;, &quot;defer&quot;, &quot;throttle&quot;, &quot;debounce&quot;, &quot;once&quot;, &quot;after&quot;, &quot;now&quot;, &quot;wrap&quot;, &quot;compose&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="_obj" value="_.$method$($target$, $END$)" description="Underscore Object" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="method" expression="enum(&quot;keys&quot;, &quot;values&quot;, &quot;pairs&quot;, &quot;invert&quot;, &quot;functions&quot;, &quot;extend&quot;, &quot;pick&quot;, &quot;omit&quot;, &quot;defaults&quot;, &quot;clone&quot;, &quot;tap&quot;, &quot;has&quot;, &quot;matches&quot;, &quot;property&quot;, &quot;isEqual&quot;, &quot;isEmpty&quot;, &quot;isElement&quot;, &quot;isArray&quot;, &quot;isObject&quot;, &quot;isArguments&quot;, &quot;isFunction&quot;, &quot;isString&quot;, &quot;isNumber&quot;, &quot;isFinite&quot;, &quot;isBoolean&quot;, &quot;isDate&quot;, &quot;isRegExp&quot;, &quot;isNaN&quot;, &quot;isNull&quot;, &quot;isUndefined&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="_util" value="_.$method$($target$, $END$)" description="Underscore Utility" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="method" expression="enum(&quot;noConflict&quot;, &quot;identity&quot;, &quot;constant&quot;, &quot;times&quot;, &quot;random&quot;, &quot;mixin&quot;, &quot;uniqueId&quot;, &quot;escape&quot;, &quot;unescape&quot;, &quot;result&quot;, &quot;template&quot; )" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="it" value="it &quot;$desc$&quot;, -&gt;&#10;  $END$" description="it test statement" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="expsw" value="expect($SELECTION$).to.$END$" description="Surround With Expectation" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="spy" value="spy = sinon.spy($target$)" description="Sinon Spy" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="exp" value="expect($target$).to.$END$" description="Expectation" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+</templateSet>

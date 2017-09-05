@@ -1,0 +1,63 @@
+<templateSet group="Ruby RSpec">
+  <template name="itdw" value="it &quot;decorates the @$var$ instance&quot; do&#10;  expect(assigns(:$var$)).to be_decorated_with $decorator$&#10;end" description="it decorates with" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="decorator" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="letbfl" value="let!(:$resource$s) { create_list(:$resource$, $number$) }" description="let factory list bang" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="resource" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="number" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="letfl" value="let(:$resource$s) { create_list(:$resource$, $number$) }" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="resource" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="number" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rspecdecorator" value="require 'rails_helper'&#10;&#10;RSpec.describe '$description$ decorator', type: :view do&#10;  let(:$instance_variable$){ create(:$factory$) }&#10;  &#10;  subject{ JSON.parse $decorator_name$Decorator.new($instance_variable$).to_json }&#10;  &#10;  $END$&#10;end&#10;" description="rspec decorator" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="decorator_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="instance_variable" expression="snakeCase(decorator_name)" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="underscoresToSpaces(instance_variable)" defaultValue="" alwaysStopAt="false" />
+    <variable name="factory" expression="snakeCase(decorator_name)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="it" value="it 'should $DO_SOME_COOL_STUFF$' do&#10;  $ADD_SOME_COOL_CODE$&#10;end" description="it" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="DO_SOME_COOL_STUFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADD_SOME_COOL_CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="matj" value="class $MATCHER_CLASS_NAME$&#10;  def initialize(expected)&#10;    @expected = expected&#10;  end&#10;&#10;  def matches?(actual)&#10;    @actual = actual&#10;    # TODO Satisfy expectation here. Return false or raise an error if it's not meet&#10;    @actual.$METHOD$.should == @expected&#10;    true&#10;  end&#10;&#10;  def failure_message&#10;    &quot;expected #{@actual.inspect} to $MATCHER_METHOD_PRESENTABLE_NAME$ #{@expected.inspect}&quot;&#10;  end&#10;&#10;  def negative_failure_message&#10;    &quot;expected #{@actual.inspect} not to $MATCHER_METHOD_PRESENTABLE_NAME$ #{@expected.inspect}&quot;&#10;  end&#10;end&#10;&#10;def $MATCHER_METHOD_NAME$(expected)&#10;  $MATCHER_CLASS_NAME$.new(expected)&#10;end&#10;" description="rspec custom matcher" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="MATCHER_CLASS_NAME" expression="" defaultValue="&quot;OneMoreThan&quot;" alwaysStopAt="true" />
+    <variable name="MATCHER_METHOD_NAME" expression="" defaultValue="&quot;be_one_more_than&quot;" alwaysStopAt="true" />
+    <variable name="MATCHER_METHOD_PRESENTABLE_NAME" expression="underscoresToSpaces(MATCHER_METHOD_NAME)" defaultValue="MATCHER_METHOD_NAME" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;one_more_than&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="shrec" value="$mock$.should_receive(:$msg$).with($params$).and_return($result$)" description="shrec" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="mock" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+</templateSet>

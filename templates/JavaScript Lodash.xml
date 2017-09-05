@@ -1,0 +1,179 @@
+<templateSet group="JavaScript Lodash">
+  <template name="ldmap" value="_.map($collection$, ($params$) =&gt; {&#10;  $END$&#10;});&#10;" description="_.map" toReformat="false" toShortenFQNames="true">
+    <variable name="collection" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldred" value="_.reduce($collection$, ($memo$, $item$) =&gt; {&#10;  $END$&#10;  return $memo$;&#10;}, $start$);&#10;" description="_.reduce" toReformat="false" toShortenFQNames="true">
+    <variable name="collection" expression="" defaultValue="&quot;collection&quot;" alwaysStopAt="true" />
+    <variable name="memo" expression="" defaultValue="&quot;memo&quot;" alwaysStopAt="true" />
+    <variable name="item" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true" />
+    <variable name="start" expression="" defaultValue="&quot;{}&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldgb" value="_.groupBy($collection$, ($singular$) =&gt; {&#10;  $END$  &#10;});" description="_.groupBy" toReformat="false" toShortenFQNames="true">
+    <variable name="collection" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="singular" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldch" value="_.chunk($array$, $size$);" description="_.chunk" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="&quot;[size=1]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldco" value="_.compact($array$);" description="_.compact" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="lddif" value="_.difference($array$, $array2$);" description="_.difference" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="array2" expression="" defaultValue="&quot;array2&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="lddifb" value="_.differenceBy($array$, $array2$, $iterator$);" description="_.differenceBy" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="array2" expression="" defaultValue="&quot;array2&quot;" alwaysStopAt="true" />
+    <variable name="iterator" expression="" defaultValue="&quot;[iteratee=_.identity]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="lddifw" value="_.differenceWith($array$, $array2$, $iterator$);" description="_.differenceWith" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="array2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="iterator" expression="" defaultValue="&quot;[comparator]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="lddrw" value="_.dropRightWhile($array$, $predicate$);" description="_.dropRightWhile" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="predicate" expression="" defaultValue="&quot;[predicate=_.identity]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="lddw" value="_.dropWhile($array$, $predicate$);" description="_.dropWhile" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="predicate" expression="" defaultValue="&quot;[predicate=_.identity]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldfil" value="_.dropWhile($array$, $val$, $start$);" description="_.fill" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <variable name="start" expression="" defaultValue="&quot;[start=0], end=[array.length]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldfi" value="_.findIndex($array$, $val$);" description="_.findIndex" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="&quot;[predicate=_.identity], [fromIndex=0]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldfli" value="_.findLastIndex($array$, $val$);" description="_.findLastIndex" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="&quot;[predicate=_.identity], [fromIndex=0]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldfl" value="_.flatten($array$);" description="_.flatten" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldfp" value="_.fromPairs($array$);" description="_.fromPairs" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldint" value="_.intersection($array$);" description="_.intersection" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;arrays&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldintb" value="_.intersectionBy($array$, $iterator$);" description="_.intersectionBy" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;arrays&quot;" alwaysStopAt="true" />
+    <variable name="iterator" expression="" defaultValue="&quot;[iteratee=_.identity]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldiw" value="_.intersectionWith($array$, $comapator$);" description="_.intersectionWith" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;arrays&quot;" alwaysStopAt="true" />
+    <variable name="comapator" expression="" defaultValue="&quot;[comparator]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldlio" value="_.lastIndexOf($array$, $val$);" description="_.lastIndexOf" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="&quot;value, [fromIndex=array.length-1]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldio" value="_.indexOf($array$, $val$);" description="_.indexOf" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="&quot;value, [fromIndex=array.length-1]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldsli" value="_.slice($array$, $val$);" description="_.slice" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="&quot;[start=0], [end=array.length]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ldso" value="_.sortedIndex($array$, $val$);" description="_.sortedIndex" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="&quot;[start=0], [end=array.length]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

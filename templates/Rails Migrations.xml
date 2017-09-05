@@ -1,0 +1,84 @@
+<templateSet group="Rails Migrations">
+  <template name="mac" value="add_column :$TABLE_NAME$, :$COLUMN_NAME$, :$STRING$" description="model add column" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLUMN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mai" value="add_index :$TABLE_NAME$,[:$COLUMN_NAME$], :name =&gt; &quot;$COLUMN_NAME$_index&quot;$END$" description="model add index" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLUMN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mcc" value="change_column :$TABLE_NAME$, :$COLUMN_NAME$, :$STRING$, $DEFAULT$ =&gt; 1$END$" description="model change column" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLUMN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mct" value="create_table :$TABLE_NAME$ do |t|&#10;  $END$&#10;end" description="model create table" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mdt" value="drop_table :$TABLE_NAME$" description="model drop table" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mnc" value="rename_column :$TABLE_NAME$, :$COLUMN_NAME$, :$NEW_COLUMN_NAME$" description="model rename column" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLUMN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NEW_COLUMN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mrc" value="remove_column :$TABLE_NAME$, :$COLUMN_NAME$" description="model remove column" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLUMN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mri" value="remove_index :$TABLE_NAME$, :$COLUMN_NAME$" description="model remove index" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLUMN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mtc" value="t.column :$COLUMN_NAME$, :$TYPE$" description="model table column" toReformat="false" toShortenFQNames="true">
+    <variable name="COLUMN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="miglegacymodels" value="[$var$].each do |legacy_model|&#10;  unless const_defined?(legacy_model) &amp;&amp; legacy_model.constantize.kind_of?(ActiveRecord::Base)&#10;    module_or_objects = legacy_model.split(&quot;::&quot;)&#10;    current_scope = Object&#10;&#10;    module_or_objects.each do |module_or_object|&#10;      if module_or_object == module_or_objects.last&#10;        current_scope.const_set(module_or_object, Class.new(ActiveRecord::Base) { self.table_name = module_or_object.tableize })&#10;      else&#10;        current_scope = current_scope.const_set(module_or_object, Class.new(Module))&#10;      end&#10;    end&#10;  end&#10;  &#10;  legacy_model.constantize.reset_column_information&#10;end" description="legacymodels" toReformat="true" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="migsqlupdate" value="$MODEL$.connection.update(&#10;  &quot;UPDATE `$table$` SET `$field$`= $value$ WHERE `$cond_field$` $cond$&quot;&#10;)" description="migration sql update" toReformat="true" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cond_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cond" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,14 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="Less Style File.less" reformat="false" live-template-enabled="true" />
+      <template name="React Component.js" reformat="false" live-template-enabled="true" />
+      <template name="React Router Route.js" reformat="true" live-template-enabled="true" />
+      <template name="Redux Action Creators.js" reformat="false" live-template-enabled="true" />
+      <template name="Redux Actions.js" reformat="false" live-template-enabled="false" />
+      <template name="Redux Container.js" reformat="false" live-template-enabled="true" />
+      <template name="Selenium Test Component.js" reformat="false" live-template-enabled="true" />
+      <template name="Selenium Test Page.js" reformat="false" live-template-enabled="true" />
+    </default_templates>
+  </component>
+</application>

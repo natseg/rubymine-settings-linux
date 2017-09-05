@@ -1,0 +1,327 @@
+<templateSet group="Rails Views">
+  <template name="adlt" value="&lt;%= audio_discovery_link_tag rel: '$VAR$', type: $VAR2$, title: $VAR3$ %&gt;" description="auto_discovery_link_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="jit" value="&lt;%= javascript_include_tag '$VAR$' %&gt;" description="javascript_include_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="slt" value="&lt;%= stylesheet_link_tag $VAR$ %&gt;" description="stylesheet_link_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="tit" value="&lt;%= image_tag '$VAR$'$VAR2$ %&gt;" description="image_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="vt" value="&lt;%= video_tag '$VAR$' %&gt;" description="video_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="at" value="&lt;%= audio_tag '$VAR$' %&gt;" description="audio_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="yi" value="&lt;%= yield %&gt;" description="yield" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="conf" value="&lt;%= content_for :$VAR$ do %&gt;&#10;  $END$&#10;&lt;% end %&gt;" description="content_for" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="ren" value="&lt;%= render $VAR$ %&gt;" description="render" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="enum('partial:', 'layout:', 'object:', 'collection:', 'as:', 'spacer_template:' )" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="co" value="$VAR$_counter" description="_counter" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="ft" value="&lt;%= form_tag $VAR1$ do %&gt;&#10;  $END$&#10;&lt;% end %&gt;" description="form_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="lt" value="&lt;%= label_tag $VAR$ %&gt;" description="label_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="tft" value="&lt;%= text_field_tag $VAR$ %&gt;" description="text_field_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sut" value="&lt;%= submit_tag $VAR$ %&gt;" description="submit_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="cbt" value="&lt;%= check_box_tag $VAR$ %&gt;" description="check_box_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="rbt" value="&lt;%= radio_button_tag :$VAR$, &quot;$VAR$&quot; %&gt;" description="radio_button_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="tat" value="&lt;%= text_area_tag :$VAR$, &quot;$VAR$&quot; %&gt;" description="text_area_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="pft" value="&lt;%= password_field_tag :$VAR$ %&gt;" description="password_field_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="hft" value="&lt;%= hidden_field_tag :$VAR$, &quot;$VAR2$&quot; %&gt;" description="hidden_field_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sft" value="&lt;%= search_field :$VAR$, :$VAR$ %&gt;" description="search_field_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="df" value="&lt;%= date_field :$VAR$, :$VAR2$ %&gt;" description="date_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="mf" value="&lt;%= month_field :$VAR$, :$VAR2$ %&gt;" description="month_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="wf" value="&lt;%= week_field :$VAR$, :$VAR2$ %&gt;" description="week_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="uf" value="&lt;%= url_field :$VAR$, :$VAR2$ %&gt;" description="url_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="cf" value="&lt;%= color_field :$VAR$, :$VAR2$ %&gt;" description="color_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="ftif" value="&lt;%= f.time_field :$VAR$ %&gt;" description="time_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="nf" value="&lt;%= number_field :$VAR$, :$VAR2$ %&gt;" description="number_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="rf" value="&lt;%= range_field :$VAR$, :$VAR2$ %&gt;" description="range_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="ftf" value="&lt;%= f.label :$VAR$ %&gt;&#10;&lt;%= f.text_field :$VAR2$ %&gt;" description="text_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="VAR2" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="ffor" value="&lt;%= fields_for $VAR1$ do |f| %&gt;&#10;  $END$&#10;&lt;% end %&gt;" description="fields_for" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="st" value="&lt;% options = options_for_select([[$VAR$]]$VAR2$) %&gt;&#10;&lt;%= f.select($VAR3$, options) %&gt;" description="select_tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="cs" value="&lt;%= collection_select(:$VAR1$, :$VAR2$, $VAR3$, :$VAR4$, :$VAR5$) %&gt;" description="collection_select" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;instance_name&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;field_name&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;active_relation_instance&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;value_attr&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;text_attr&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="fts" value="&lt;%= f.time_select $VAR$ %&gt;" description="f.time_select" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sd" value="&lt;%= select_date $VAR$ %&gt;" description="select_date" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sti" value="&lt;%= select_time $VAR$ %&gt;" description="select_time" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sdt" value="&lt;%= select_datetime $VAR$ %&gt;" description="select_datetime" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sy" value="&lt;%= select_year $VAR$ %&gt;" description="select_year" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sm" value="&lt;%= select_month $VAR$ %&gt;" description="select_month" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sda" value="&lt;%= select_day $VAR$ %&gt;" description="select_day" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sh" value="&lt;%= select_hour $VAR$ %&gt;" description="select_hour" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="smo" value="&lt;%= select_minute $VAR$ %&gt;" description="select_minute" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="ss" value="&lt;%= select_second $VAR$ %&gt;" description="select_second" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="fpf" value="&lt;%= f.label :$VAR$ %&gt;&#10;&lt;%= f.password_field :$VAR2$ %&gt;" description="f.password_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;password&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="VAR2" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sif" value="&lt;% if $VAR1$ %&gt;&#10;  $SELECTION$&#10;&lt;% end %&gt;" description="if" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sifel" value="&lt;% if $VAR1$ %&gt;&#10;  $SELECTION$&#10;&lt;% else %&gt;&#10;  $END$&#10;&lt;% end %&gt;" description="if else" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sun" value="&lt;% unless $VAR1$ %&gt;&#10;  $SELECTION$&#10;&lt;% end %&gt;" description="unless" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="itreturnsheader" value="it &quot;returns $VAR2$ header&quot; do&#10;  expect(response).to have_http_status(:$VAR1$)&#10;end" description="it returns header" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="capitalize(underscoresToSpaces(VAR1))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ffif" value="&lt;%= f.file_field $VAR$ %&gt;" description="f.file_field" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="sub" value="&lt;%= submit_tag '$VAR$' %&gt;" description="submit_Tag" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="lit" value="&lt;%= link_to $VAR$ %&gt;" description="link_to" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="ethcb" value="expect(page).to have_selector(&quot;input[type=checkbox][name='$var$']&quot;)" description="expect to have check box" toReformat="true" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+</templateSet>

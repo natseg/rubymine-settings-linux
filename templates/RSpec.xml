@@ -1,0 +1,1205 @@
+<templateSet group="RSpec">
+  <template name="it" value="it &quot;then $VARIABLE_1$&quot; do&#10;  $REMINDERS$$END$&#10;end&#10;" description="it (does something)" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="does something" alwaysStopAt="true" />
+    <variable name="REMINDERS" expression="&quot;# Database\n # - changes (additions, subtractions, increases, decreases)\n # Emails\n # - sent\n # - to, from, content\n #\n # External services\n # - expectations\n #\n # Response\n # - cookie\n # - headers (auth, format, caching)\n # - body\n&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etbs" value="expect(response).to be_success" description="expect to be_success" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnbs" value="expect(response).to_not be_success" description="expect to not be_success" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="bef" value="before(:each) do&#10;  $END$&#10;end" description="before" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="et=" value="expect($VARIABLE_1$).to == $VARIABLE_2$" description="expect to ==" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="value" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etm" value="expect($VARIABLE_1$).to match(/$VARIABLE_2$/)" description="expect to match" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="regexp" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ete" value="expect($VARIABLE_1$).to eql($VARIABLE_2$)" description="expect equal" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="value" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etb" value="expect($VARIABLE_1$).to be($VARIABLE_2$)" description="expect to be" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="result" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etbko" value="expect($VARIABLE_1$).to be_a_kind_of($VARIABLE_2$)" description="expect be_kind_of" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="klass" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnbio" value="expect($VARIABLE_1$).to_not be_instance_of($VARIABLE_2$)" description="expect to not be_instance_of" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="klass" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etbc" value="expect($VARIABLE_1$).to be_close($VARIABLE_2$, $VARIABLE_3$)" description="should be_close" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="result" alwaysStopAt="true" />
+    <variable name="VARIABLE_3" expression="" defaultValue="tolerance" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etbr" value="expect(response).to be_redirect" description="expect to be_redirect" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="eth" value="expect($VARIABLE_1$).to have($VARIABLE_2$).$VARIABLE_3$" description="expect to have" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="num" alwaysStopAt="true" />
+    <variable name="VARIABLE_3" expression="" defaultValue="things" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ethal" value="expect($VARIABLE_1$).to have_at_least($VARIABLE_2$).$VARIABLE_3$" description="expect to have_at_least" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="num" alwaysStopAt="true" />
+    <variable name="VARIABLE_3" expression="" defaultValue="things" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etham" value="expect($VARIABLE_1$).to have_at_most($VARIABLE_2$).$VARIABLE_3$" description="expect have_at_most" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="num" alwaysStopAt="true" />
+    <variable name="VARIABLE_3" expression="" defaultValue="things" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ethr" value="expect($VARIABLE_1$).to have_received(:$method$)" description="expect_to have_received" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etn=" value="expect($VARIABLE_1$).to_not == $VARIABLE_2$" description="expect to not ==" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="value" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnm" value="expect($VARIABLE_1$).to_not match(/$VARIABLE_2$/)" description="expect to not match" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="regexp" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etne" value="expect($VARIABLE_1$).to_not eql($VARIABLE_2$)" description="expect to not equal" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="value" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnb" value="expect($VARIABLE_1$).to_not be($VARIABLE_2$)" description="expect_to not be" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="result" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnkof" value="expect($VARIABLE_1$).to_not be_a_kind_of($VARIABLE_2$)" description="expect_to be_kind_of" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="klass" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnbc" value="expect($VARIABLE_1$).to_not be_close($VARIABLE_2$, $VARIABLE_3$)" description="expect to not be_close" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="result" alwaysStopAt="true" />
+    <variable name="VARIABLE_3" expression="" defaultValue="tolerance" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnbr" value="expect(response).to_not be_redirect" description="expect to not redirect" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnp" value="expect($VARIABLE_1$).to_not be_$VARIABLE_2$" description="expect to not predicate" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="be_${3:predicate" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnre" value="expect{ $VARIABLE_1$ }.to_not raise_error($VARIABLE_2$)" description="expect to not raise_error" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="error" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnr" value="expect($VARIABLE_1$).to_not receive(:$VARIABLE_2$)$VARIABLE_3$" description="expect to not_receive" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="mock" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="message" alwaysStopAt="true" />
+    <variable name="VARIABLE_3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnrt" value="expect($VARIABLE_1$).to_not respond_to(:$VARIABLE_2$)" description="expect_to not respond_to" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="sym" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etns" value="expect($VARIABLE_1$).to_not satisfy { |obj| $VARIABLE_2$ }" description="expect to not satisfy" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnt" value="expect{ $VARIABLE_1$ }.to_not throw_symbol(:$VARIABLE_2$)" description="expect to not throw" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="symbol" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etbp" value="expect($VARIABLE_1$).to  be_$VARIABLE_2$" description="expect to predicate" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="be_${3:predicate" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etre" value="expect{ $VARIABLE_1$ }.to raise_error($VARIABLE_2$)" description="expect to raise_error" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="subject" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="error" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etr" value="expect($VARIABLE_1$).to receive($VARIABLE_2$)" description="expect to receive" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="mock" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="message" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etrst" value="expect($VARIABLE_1$).to respond_to($VARIABLE_2$)" description="should respond_to" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="target" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="sym" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ets" value="$VARIABLE_1$.should satisfy { |obj| $VARIABLE_2$ }" description="expect to satisfy" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="target" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ett" value="expect{ $VARIABLE_1$ }.to throw_symbol(:$VARIABLE_2$)" description="expect to throw" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="subject" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="symbol" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="set" value="expect($SELECTION$).to $END$" description="surround expect to" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="setn" value="expect($SELECTION$).to_not $END$" description="surround expect to not" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="foc" value=", focus: true$END$" description="focus true" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="stxt" value="&quot;$END$ #{$SELECTION$}&quot;" description="surround txt" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ethhs" value="expect(response).to have_http_status(:$VAR2$)" description="expect to have http status" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="let" value="let(:$VAR1$) { $VAR2$ }" description="let" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iiet" value="it { is_expected.to $VAR1$ }" description="it is expected to" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="sub" value="subject{ $VAR1$ }" description="subject" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="trai" value="trait :$var1$ do&#10;  $END$&#10;end" description="trait" toReformat="false" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etc" value="expect{ $VAR1$ }.to change{ $VAR2$ }.by($VAR3$)" description="expect to change" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etrt" value="expect($VAR0$: &quot;$VAR1$&quot;).to route_to(&#10;  $VAR2$&#10;)" description="expect to route to" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="letb" value="let!(:$VAR1$) { $VAR2$ }" description="let bang" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="eths" value="expect(page).to have_selector(&quot;$VARIABLE_2$&quot;)" description="expect to have selector" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_2" expression="" defaultValue="value" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etni" value="expect($VARIABLE_1$).to_not include($VARIABLE_2$)" description="expect to not include" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="value" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etret" value="expect(response).to render_template($VAR2$)" description="expect to render template" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="anr" value="and_raise($VARIABLE_1$)" description="and_raise" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="exception" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="anrb" value="and_return { $VARIABLE_1$ }" description="and_return with block" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="anra" value="and_return($VARIABLE_1$)" description="and_return with args" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="value" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ant" value="and_throw($VARIABLE_1$)" description="and_throw" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="sym" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="any" value="and_yield($VARIABLE_1$)" description="and_yield" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="values" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="annot" value="any_number_of_times" description="any_number_of_times" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="atl" value="at_least($VARIABLE_1$).times" description="at_least" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="n" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="atm" value="at_most($VARIABLE_1$).times" description="at_most" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="n" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="con" value="context &quot;$VARIABLE_1$&quot; do&#10;  $REMINDERS$&#10;  $END$&#10;  &#10;end&#10;" description="context" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="context" alwaysStopAt="true" />
+    <variable name="REMINDERS" expression="&quot;# Request:\n # - Cookie (auth)\n # - Type\n # - Headers\n # - Body\n # - parameters\n #\n # External services\n # - error\n # - time out\n # - success\n # - mocks\n #\n # Database\n # - preconditions\n # - auth\n # - operations with side effects\n # - missing data\n&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="des" value="describe &quot;$VARIABLE_1$&quot; do&#10;  $END$&#10;end" description="describe (String)" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="subject" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="dest" value="describe $VARIABLE_1$ do&#10;  $END$&#10;end" description="describe (type)" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="Type" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="dests" value="describe $VARIABLE_1$, &quot;$VARIABLE_2$&quot; do&#10;  $END$&#10;end" description="describe (type, string)" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="Type" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="description" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ex" value="exactly($VARIABLE_1$).times" description="exactly" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="n" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="matc" value="class $VARIABLE_1$&#10;  def initialize($VARIABLE_3$)&#10;    @$VARIABLE_3$ = $VARIABLE_3$&#10;  end&#10;&#10;  def matches?(actual)&#10;    @actual = actual&#10;    # Satisfy expectation here. Return false or raise an error if it's not met.&#10;    $VARIABLE_LAST$&#10;    true&#10;  end&#10;&#10;  def failure_message_for_should&#10;    &quot;expected #{@actual.inspect} to $VARIABLE_2$ #{@$VARIABLE_3$.inspect}, but it didn't&quot;&#10;  end&#10;&#10;  def failure_message_for_should_not&#10;    &quot;expected #{@actual.inspect} not to $VARIABLE_2$ #{@$VARIABLE_3$.inspect}, but it did&quot;&#10;  end&#10;end&#10;&#10;def $VARIABLE_2$($VARIABLE_3$)&#10;  $VARIABLE_1$.new($VARIABLE_3$)&#10;end" description="Matcher (Custom)" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="ReverseTo" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="reverse_to" alwaysStopAt="true" />
+    <variable name="VARIABLE_3" expression="" defaultValue="expected" alwaysStopAt="true" />
+    <variable name="VARIABLE_LAST" expression="" defaultValue="@actual.reverse.should == @$VARIABLE_3$" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mat" value="Spec::Matchers.create $VARIABLE_1$ do |meringue|&#10;  match do |substance|&#10;    substance.looks_like?(meringue)&#10;  end&#10;end" description="Matcher (DSL)" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue=":look_like" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="moc" value="$VARIABLE_1$ = mock(&quot;$VARIABLE_2$&quot;$VARIABLE_3$)&#10;$END$" description="mock" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="var" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="mock_name" alwaysStopAt="true" />
+    <variable name="VARIABLE_3" expression="" defaultValue=", :null_object =&gt; true" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mm" value="mock_model($VARIABLE_1$)$END$" description="mock_model" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="model" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="mocw" value="Spec::Runner.configure do |config|&#10; config.mock_with :$VARIABLE_LAST$&#10;end" description="mock_with" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE_LAST" expression="" defaultValue="mocha|flexmock|rr" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="on" value="once" description="once" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="resh" value="require File.dirname(__FILE__) + '/../spec_helper'" description="Require spec_helper" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="conn" value="controller_name :$VARIABLE_1$" description="controller_name" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="controller" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="wia" value="with($VARIABLE_1$)&#10;$END$" description="with args" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="args" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="aft" value="after($VARIABLE_1$) do&#10;  $END$&#10;end" description="after" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue=":each" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="tw" value="twice" description="twice" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietvpo" value="it { is_expected.to validate_presence_of(:$VAR1$)$VAR2$ }" description="it is expected to validate presence of" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietvuo" value="it { is_expected.to validate_uniqueness_of(:$VAR1$)$VAR2$ }" description="it is expected to validate uniqueness of" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;scoped_to&quot;, &quot;case_insensitive&quot;, &quot;allow_nil&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietvabo" value="it { is_expected.to validate_absence_of(:$VAR1$)$VAR2$ }" description="it is expected to validate absence of" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;with_message(string)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietvco" value="it { is_expected.to validate_confirmation_of(:$VAR1$)$VAR2$ }" description="it is expected to validate confirmation of" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;with_message(string)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietveo" value="it { is_expected.to validate_exclusion_of(:$VAR1$)$VAR2$ }" description="it is expected to validate exclusion of" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;with_message(string)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietvio" value="it { is_expected.to validate_inclusion_of(:$VAR1$)$VAR2$ }" description="it is expected to validate inclusion of" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;in_range()&quot;, in_array()&quot;,&quot;, &quot;with_message(string)&quot;, &quot;with_low_message()&quot;, &quot;with_high_message()&quot;, &quot;allow_nil(true)&quot;, &quot;allow_blank(true)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietvno" value="it { is_expected.to validate_numericality_of(:$VAR1$)$VAR2$ }" description="it is expected to validate numericality of" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;only_integer(true)&quot;, &quot;is_less_than(n)&quot;, &quot;is_less_than_or_equal_to(n)&quot;, &quot;is_equal_to(n)&quot;, &quot;is_greater_than_or_equal_to(n)&quot;, &quot;is_greater_than(n)&quot;,&quot;even&quot;, &quot;odd&quot;, &quot;with_message&quot;, &quot;allow_nil&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietbt" value="it { is_expected.to belong_to(:$VAR1$)$VAR2$ }" description="it is expect to belong to" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;conditions(attr: value)&quot;, &quot;order(attr dir)&quot;, &quot;class_name(Class)&quot;, &quot;with_foreign_key()&quot;, &quot;.dependent(dependent_opt)&quot;, &quot;counter_cache(true)&quot;, &quot;touch(true)&quot;, &quot;autosave(true)&quot;, &quot;inverse_of(field)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iiethabtm" value="it { is_expected.to have_and_belong_to_many(:$VAR1$)$VAR2$ }" description="it is expect to have many and belong to many" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;conditions(attr: value)&quot;, &quot;order(attr dir)&quot;, &quot;class_name(Class)&quot;, &quot;validate(true)&quot;, &quot;.autosave(true)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iiethm" value="it { is_expected.to have_many(:$VAR1$)$VAR2$ }" description="it is expect to have many" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;conditions(attr: value)&quot;, &quot;order(attr dir)&quot;, &quot;class_name(Class)&quot;, &quot;with_foreign_key()&quot;, &quot;.dependent(dependent_opt)&quot;, &quot;through(association)&quot;, &quot;source(association)&quot;, &quot;validate(true)&quot;, &quot;autosave(true)&quot;, &quot;inverse_of(field)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietho" value="it { is_expected.to have_one(:$VAR1$)$VAR2$ }" description="it is expect to have one" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;conditions(attr: value)&quot;, &quot;order(attr dir)&quot;, &quot;class_name(Class)&quot;, &quot;.dependent(dependent_opt)&quot;, &quot;with_foreign_key(column)&quot;, &quot;through(association)&quot;, &quot;source(association)&quot;, &quot;validate(true)&quot;, &quot;autosave(true)&quot;, &quot;inverse_of(field)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="coninvreq" value="context 'when an invalid request is made' do&#10;  before(:each) do&#10;    $BEFORE$&#10;  end&#10;&#10;  it 'sends a response of a $response_desc$ header' do&#10;    expect(response).to have_http_status(:$response$)&#10;  end&#10;&#10;  it 'renders a response with the errors partial'do&#10;    expect(response).to render_template('$template$')&#10;  end&#10;  &#10;  describe &quot;response&quot; do&#10;    render_views&#10;    &#10;    subject{ $SUBJECT$ }&#10;&#10;    it &quot;contains explanation of missing field&quot; do&#10;      expect(subject[$FIELD$]).to be_present&#10;    end&#10;  end&#10;end" description="context invalid request" toReformat="true" toShortenFQNames="true">
+    <variable name="response" expression="" defaultValue="&quot;unprocessable_entity&quot;" alwaysStopAt="true" />
+    <variable name="template" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUBJECT" expression="" defaultValue="&quot;JSON.parse(response.body)&quot;" alwaysStopAt="true" />
+    <variable name="FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BEFORE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="response_desc" expression="underscoresToSpaces(response)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itrhs" value="it &quot;returns a http status of $VAR1$&quot; do&#10;  expect(response).to have_http_status(:$STATUS$)&#10;end" description="it returns http status" toReformat="false" toShortenFQNames="true">
+    <variable name="STATUS" expression="enum(&quot;continue&quot;, &quot;switching_protocols&quot;, &quot;processing&quot;, &quot;ok&quot;, &quot;created&quot;, &quot;accepted&quot;, &quot;non_authoritative_information&quot;, &quot;no_content&quot;, &quot;reset_content&quot;, &quot;partial_content&quot;, &quot;reset_content&quot;, &quot;partial_content&quot;, &quot;multi_status&quot;, &quot;already_reported&quot;, &quot;im_used&quot;, &quot;multiple_choices&quot;, &quot;moved_permanently&quot;, &quot;found&quot;, &quot;see_other&quot;, &quot;not_modified&quot;, &quot;use_proxy&quot;, &quot;reserved&quot;, &quot;temporary_redirect&quot;, &quot;permanent_redirect&quot;, &quot;bad_request&quot;, &quot;unauthorized&quot;, &quot;payment_required&quot;, &quot;forbidden&quot;, &quot;not_found&quot;, &quot;not_found&quot;, &quot;method_not_allowed&quot;, &quot;not_acceptable&quot;, &quot;proxy_authentication_required&quot;, &quot;request_timeout&quot;, &quot;conflict&quot;, &quot;gone&quot;, &quot;length_required&quot;, &quot;precondition_failed&quot;, &quot;request_entity_too_large&quot;, &quot;request_uri_too_long&quot;, &quot;unsupported_media_type&quot;, &quot;unsupported_media_type&quot;, &quot;requested_range_not_satisfiable&quot;, &quot;expectation_failed&quot;, &quot;unprocessable_entity&quot;, &quot;locked&quot;, &quot;failed_dependency&quot;, &quot;upgrade_required&quot;, &quot;precondition_required&quot;, &quot;too_many_requests&quot;, &quot;request_header_fields_too_large&quot;, &quot;internal_server_error&quot;, &quot;not_implemented&quot;, &quot;bad_gateway&quot;, &quot;service_unavailable&quot;, &quot;gateway_timeout&quot;, &quot;http_version_not_supported&quot;, &quot;variant_also_negotiates&quot;, &quot;insufficient_storage&quot;, &quot;loop_detected&quot;, &quot;not_extended&quot;, &quot;network_authentication_required&quot; )" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="underscoresToSpaces(STATUS)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itincludes" value="it &quot;includes $desc$&quot; do&#10;    expect(subject['$attr$']).to eql($target$.$attr2$)&#10;  end" description="it includes" toReformat="false" toShortenFQNames="true">
+    <variable name="attr" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="attr2" expression="" defaultValue="attr" alwaysStopAt="false" />
+    <variable name="desc" expression="underscoresToSpaces(attr)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rspeccontroller" value="require 'rails_helper'&#10;&#10;RSpec.describe $VAR$, type: :controller do&#10;  $END$&#10;end&#10;" description="Rspec Controller" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etred" value="expect($VARIABLE_1$).to redirect_to($VARIABLE_2$)" description="expect to redirect_to" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="error" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="descs" value="describe &quot;$VARIABLE_1$&quot; do&#10;  $SELECTION$&#10;end" description="describe surround" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="subject" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="contextsurrount" value="context &quot;$VARIABLE_1$&quot; do&#10;  $SELECTION$&#10;end" description="context" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="context" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etco" value="expect($VAR1$).to contain &quot;$VAR2$&quot;" description="expect to contain" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="scn" value="scenario &quot;$VARIABLE_1$&quot; do&#10;  $END$&#10;end" description="scenario" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="context" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="vst" value="visit $var$" description="visit" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="clb" value="click_button &quot;$VAR$&quot;" description="click_button" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="cll" value="click_link &quot;$VAR$&quot;" description="click_link" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="fil" value="fill_in &quot;$VAR$&quot;, with: &quot;$VAR1$&quot;" description="fill_in" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itreto" value="it &quot;redirects to the $VAR1$ path&quot; do&#10;  expect(response).to redirect_to($VAR$_path)&#10;end" description="it redirects to" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="underscoresToSpaces(VAR)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itrtemp" value="it &quot;renders template $VAR2$&quot; do&#10;  expect(response).to render_template('$VAR1$')&#10;end" description="it renders template" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="VAR1" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="eti" value="expect($VARIABLE_1$).to include($VARIABLE_2$)" description="expect to include" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="num" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ethc" value="expect($parent$).to have_content(&quot;$VARIABLE_2$&quot;)" description="expect to have content" toReformat="true" toShortenFQNames="true">
+    <variable name="parent" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="value" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etex" value="expect($parent$).to exist" description="expect to exist" toReformat="true" toShortenFQNames="true">
+    <variable name="parent" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="atr" value="allow($target$).to receive($options$)$extra$" description="allow to receive" toReformat="true" toShortenFQNames="true">
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="options" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="extra" expression="enum(&quot;.with(&quot;, &quot;.and_return(&quot;, &quot;.and_raise(&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rspecrouting" value="require 'rails_helper'&#10;&#10;RSpec.describe $VAR$, type: :routing do&#10;  $END$&#10;end&#10;" description="RSpec Routing" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rspecmodel" value="require 'rails_helper'&#10;&#10;RSpec.describe $VAR$, type: :model do&#10;  # Shoulda Matchers:&#10;  # - have_and_belong_to_many&#10;  # - have_many&#10;  # - have_one&#10;&#10;  # - accepts_nested_attributes_for&#10;&#10;  # - belongs_to&#10;  # - have_db_column&#10;  # - have_db_index&#10;&#10;  # - validate_presence_of&#10;  # - validate_length_of&#10;  # - validate_uniqueness_of&#10;&#10;  # - validate_exclusion_of&#10;  # - validate_inclusion_of&#10;&#10;  # - validate_numericality_of&#10;  # - allow_value&#10;&#10;  # - validate_confirmation_of&#10;  # - have_secure_password&#10;&#10;  # - define_enum_for&#10;  # - have_readonly_attribute&#10;  # - serialize&#10;  # - delegate_method&#10;  $END$&#10;end&#10;" description="RSpec Model" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rspecview" value="require 'rails_helper'&#10;&#10;RSpec.describe '$target$', type: :view do&#10;  let(:rendered) do&#10;    $before_render$&#10;    render template: '$file$'&#10;  end&#10;  &#10;  let(:page) { Capybara::Node::Simple.new(rendered) }&#10;  &#10;  $END$&#10;end&#10;" description="RSpec View" toReformat="false" toShortenFQNames="true">
+    <variable name="target" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="before_render" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="file" expression="target" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="cdasc" value="class_double('$class$').as_stubbed_const" description="class_dobule as stubbed const" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="italv" value="it &quot;assigns $var_desc$ local variable&quot; do&#10;  expect(assigns(:$var_name$)).to eql($value$)&#10;end" description="it assigns local variable" toReformat="false" toShortenFQNames="true">
+    <variable name="var_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="var_name" defaultValue="" alwaysStopAt="true" />
+    <variable name="var_desc" expression="var_name" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnex" value="expect($SELECTOR$).to_not exist" description="expect to not exist" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itroto" value="it &quot;routes $method$ $url$ to $controller$Controller#$action$&quot; do&#10;  expect($method2$: '$url$').to route_to(&#10;    controller: '$controller2$',&#10;    action: '$action2$'&#10;  )&#10;end" description="it routes to" toReformat="false" toShortenFQNames="true">
+    <variable name="method" expression="enum(&quot;get&quot;, &quot;post&quot;, &quot;put&quot;, &quot;delete&quot;)" defaultValue="&quot;get&quot;" alwaysStopAt="true" />
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method2" expression="method" defaultValue="" alwaysStopAt="false" />
+    <variable name="controller2" expression="url" defaultValue="" alwaysStopAt="true" />
+    <variable name="action2" expression="action" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itssv" value="it &quot;sets session value $var_desc$&quot; do&#10;  expect(locals(:$var_name$)).to eql($value$)&#10;end" description="it sets session value" toReformat="false" toShortenFQNames="true">
+    <variable name="var_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="var_name" defaultValue="" alwaysStopAt="true" />
+    <variable name="var_desc" expression="var_name" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itdssv" value="it &quot;doesn't set session value $var_desc$&quot; do&#10;  expect(locals(:$var_name$)).to be_nil&#10;end" description="it sets session value" toReformat="false" toShortenFQNames="true">
+    <variable name="var_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var_desc" expression="var_name" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itbl" value="it_behaves_like &quot;$desc$&quot; do&#10;  $END$&#10;end" description="it_behaves_like" toReformat="false" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itcftses" value="it &quot;clears the $var_desc$ from the session&quot; do&#10;  expect(session[:$var$]).to_not be_present        &#10;end" description="it clears from the session" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var_desc" expression="underscoresToSpaces(var)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ithl" value="it &quot;has a link to $desc$&quot; do&#10;  expect($target$).to have_selector(&quot;a[href='#{$path$}']&quot;)&#10;end" description="it has link" toReformat="false" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="" defaultValue="&quot;page&quot;" alwaysStopAt="true" />
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ithc" value="it &quot;includes $desc$&quot; do&#10;    expect($target$).to have_content($content$)&#10;  end" description="it has content" toReformat="false" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="page" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iths" value="it &quot;has $desc$&quot; do&#10;  expect($target$).to have_selector($selector$)&#10;end" description="it has selector" toReformat="false" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="" defaultValue="&quot;page&quot;" alwaysStopAt="true" />
+    <variable name="selector" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="letbl" value="let(:$var$) do&#10;  $END$&#10;end" description="let block" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rspecsharedexamples" value="shared_examples_for &quot;$description$&quot; do&#10;  $END$&#10;end&#10;" description="shared examples" toReformat="false" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ithrl" value="it &quot;has $desc$ link&quot; do&#10;  expect($target$).to have_selector(&quot;a[href='#{$path$}'][data-remote='true'][data-type='$type$']&quot;)&#10;end" description="it has remote link" toReformat="false" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="" defaultValue="&quot;page&quot;" alwaysStopAt="true" />
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietdef" value="it { is_expected.to define_enum_for(:$VAR1$)$opts$ }" description="it is expected to define enum for" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="opts" expression="enum(&quot;&quot;, &quot;with(array)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iiethdc" value="it { is_expected.to have_db_column(:$VAR1$)$VAR2$ }" description="it is expect to have database column" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;of_type(type)&quot;, &quot;with_options(migration_options)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iiethdi" value="it { is_expected.to have_db_index(:$VAR1$)$VAR2$ }" description="it is expected to have db index" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;unique(true)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iiethroa" value="it { is_expected.to have_readonly_attribute(:$VAR1$)$VAR2$ }" description="it is expect to have many read only attribute" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iiets" value="it { is_expected.to serialize(:$VAR1$)$VAR2$ }" description="it is expect to serialize" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;as(serializerClass)&quot;, &quot;as_instance_of(Class)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietav" value="it { is_expected.to allow_value($VAR1$).for($attr$)$VAR2$ }" description="it is expected to allow value" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="attr" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;on(event)&quot;, &quot;with_message(string)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietnal" value="it { is_expected.to_not allow_value($VAR1$).for($attr$) }" description="it is expected to notallow value" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="attr" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietvlo" value="it { is_expected.to validate_length_of($VAR1$)$VAR2$ }" description="it is expected to validate length of" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;is_at_least(n)&quot;, &quot;is_at_most(n)&quot;, &quot;is_equal_to(n)&quot;,&quot;with_message(string)&quot;, &quot;with_short_message(string)&quot;, &quot;with_long_message(string)&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iiethsp" value="it { is_expected.to have_secure_password }" description="it is expected to have secure password" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietp" value="it { is_expected.to permit($VAR1$).for($VAR2$) }" description="it is expected to permit" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="enum(&quot;&quot;, &quot;scoped_to&quot;, &quot;case_insensitive&quot;, &quot;allow_nil&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietrt" value="it { is_expected.to redirect_to($VAR1$) }" description="it is expected to redirect to" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietrte" value="it { is_expected.to render_template($VAR1$) }" description="it is expected to render template" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietrwl" value="it { is_expected.to render_with_layout($VAR1$) }" description="it is expected to render with layout" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietrf" value="it { is_expected.to rescue_from($VAR1$) }" description="it is expected to rescue from" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietrw" value="it { is_expected.to respond_with(:$VAR1$) }" description="it is expected to respond with" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="enum(&quot;continue&quot;, &quot;switching_protocols&quot;, &quot;processing&quot;, &quot;ok&quot;, &quot;created&quot;, &quot;accepted&quot;, &quot;non_authoritative_information&quot;, &quot;no_content&quot;, &quot;reset_content&quot;, &quot;partial_content&quot;, &quot;reset_content&quot;, &quot;partial_content&quot;, &quot;multi_status&quot;, &quot;already_reported&quot;, &quot;im_used&quot;, &quot;multiple_choices&quot;, &quot;moved_permanently&quot;, &quot;found&quot;, &quot;see_other&quot;, &quot;not_modified&quot;, &quot;use_proxy&quot;, &quot;reserved&quot;, &quot;temporary_redirect&quot;, &quot;permanent_redirect&quot;, &quot;bad_request&quot;, &quot;unauthorized&quot;, &quot;payment_required&quot;, &quot;forbidden&quot;, &quot;not_found&quot;, &quot;not_found&quot;, &quot;method_not_allowed&quot;, &quot;not_acceptable&quot;, &quot;proxy_authentication_required&quot;, &quot;request_timeout&quot;, &quot;conflict&quot;, &quot;gone&quot;, &quot;length_required&quot;, &quot;precondition_failed&quot;, &quot;request_entity_too_large&quot;, &quot;request_uri_too_long&quot;, &quot;unsupported_media_type&quot;, &quot;unsupported_media_type&quot;, &quot;requested_range_not_satisfiable&quot;, &quot;expectation_failed&quot;, &quot;unprocessable_entity&quot;, &quot;locked&quot;, &quot;failed_dependency&quot;, &quot;upgrade_required&quot;, &quot;precondition_required&quot;, &quot;too_many_requests&quot;, &quot;request_header_fields_too_large&quot;, &quot;internal_server_error&quot;, &quot;not_implemented&quot;, &quot;bad_gateway&quot;, &quot;service_unavailable&quot;, &quot;gateway_timeout&quot;, &quot;http_version_not_supported&quot;, &quot;variant_also_negotiates&quot;, &quot;insufficient_storage&quot;, &quot;loop_detected&quot;, &quot;not_extended&quot;, &quot;network_authentication_required&quot; )" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietss" value="it { is_expected.to set_session($VAR1$).to($val$) }" description="it is expected to set session" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietstf" value="it { is_expected.to set_the_flash[$VAR1$].to($val$) }" description="it is expected to set the flash" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietuaa" value="it { is_expected.to use_after_action($callback$) }" description="it is expected to use after action" toReformat="false" toShortenFQNames="true">
+    <variable name="callback" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietuaf" value="it { is_expected.to use_after_filter($callback$) }" description="it is expected to use after filter" toReformat="false" toShortenFQNames="true">
+    <variable name="callback" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietuaac" value="it { is_expected.to use_around_action($callback$) }" description="it is expected to use around action" toReformat="false" toShortenFQNames="true">
+    <variable name="callback" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietuafi" value="it { is_expected.to use_around_filter($callback$) }" description="it is expected to use around filter" toReformat="false" toShortenFQNames="true">
+    <variable name="callback" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietuba" value="it { is_expected.to use_before_action($callback$) }" description="it is expected to use before action" toReformat="false" toShortenFQNames="true">
+    <variable name="callback" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietbf" value="it { is_expected.to use_before_filter($callback$) }" description="it is expected to use before filter" toReformat="false" toShortenFQNames="true">
+    <variable name="callback" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnc" value="expect{ $VAR1$ }.to_not change{ $VAR2$ }" description="expect to not change" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="concern" value="require 'active_support/concern'&#10;&#10;module $NAME$&#10;  extend ActiveSupport::Concern&#10;&#10;  included do&#10;    $END$  &#10;  end&#10;  &#10;  module ClassMethods&#10;  &#10;  end&#10;end&#10;" description="concern" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="capitalize(underscoresToCamelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="descca" value="# Shoulda matchers&#10;# - redirect_to&#10;# - respond_with&#10;&#10;# - render_template&#10;# - render_with_layout&#10;&#10;# - set_session&#10;# - set_flash&#10;&#10;# - permit_parameter&#10;&#10;# - rescue_from&#10;&#10;# - use_after_action / user_after_filter&#10;# - user_around_action / user_around_filter&#10;# - use_before_action / use_before_filter&#10;&#10;describe &quot;$HTTP_METHOD$ #$ACTION$&quot; do&#10;  before(:each) do&#10;    $ACTION$_request&#10;  end&#10;  &#10;  $END$&#10;end" description="describe controller action" toReformat="true" toShortenFQNames="true">
+    <variable name="HTTP_METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ethpf" value="expect(page).to have_selector(&quot;input[type=password][name=$name$]&quot;)" description="expect to have password field" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="&quot;password&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ethrf" value="expect(page).to have_selector(&quot;input[type=radio][name='$name$'][value='$val$']&quot;)" description="expect to have radio field" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ethsb" value="expect(page).to have_selector(&quot;input[type=submit]&quot;)" description="expect to have submit button" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ethsdd" value="expect(page).to have_selector(&quot;select[name='$var$']&quot;)" description="expect to have select drop down" toReformat="true" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ethtf" value="expect(page).to have_selector(&quot;input[type=text][name='$name$']&quot;)" description="expect to have text field" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="factory" value="FactoryGirl.define do&#10;  factory :$name$ do&#10;    $END$&#10;  end&#10;end&#10;" description="factorygirl factor" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietanaf" value="it{ is_expected.to accept_nested_attributes_for($name$)$opts$ }" description="it is expected to accept nested attributes for" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="opts" expression="enum(&quot;&quot;, &quot;.allow_destroy(true)&quot;, &quot;.limit&quot;, &quot;.update_only&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietbko" value="it { is_expected.to be_kind_of($VAR$)}" description="it is expected to be kind of" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="iietdt" value="it{ is_expected.to delegate_method($method$).to($target$)$opts$ }" description="it is expect to delegate to" toReformat="false" toShortenFQNames="true">
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="opts" expression="enum(&quot;&quot;, &quot;.as(&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itdi" value="it &quot;doesn't include the $var$&quot; do&#10;  expect(subject['$var$']).to be_nil &#10;end" description="it doesn't include" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itdrl" value="it &quot;doesn't render $desc$ layout&quot; do&#10;  expect(response).to_not render_template('$layout$')&#10;end" description="it doesn't render layout" toReformat="false" toShortenFQNames="true">
+    <variable name="layout" expression="" defaultValue="&quot;application&quot;" alwaysStopAt="true" />
+    <variable name="desc" expression="underscoresToSpaces(layout)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ithcff" value="it &quot;has the correct form fields&quot; do&#10;  $END$  &#10;end" description="it has correct form fields" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ithf" value="it &quot;has form pointing to $target$&quot; do&#10;  expect(page).to have_selector(&quot;form[action='#{$url$}']&quot;)&#10;  expect(page).to_not have_selector(&quot;input[name='_method']&quot;, visible: false)&#10;end" description="it has form" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="underscoresToSpaces(url)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ithpf" value="it &quot;has $description$ password field&quot; do&#10;  expect(page).to have_selector(&quot;input[type=password][name=$field$]&quot;)&#10;end" description="it has password field" toReformat="false" toShortenFQNames="true">
+    <variable name="field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="underscoresToSpaces(field)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ithpufo" value="it &quot;has form pointing to $target$&quot; do&#10;  expect(page).to have_selector(&quot;form[action='#{$url$}']&quot;)&#10;  expect(page).to have_selector(&quot;input[name='_method'][value='put']&quot;, visible: false)&#10;end" description="it has a put form point to" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="underscoresToSpaces(url)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ithrfo" value="it &quot;has form pointing to $target$&quot; do&#10;  expect(page).to have_selector(&quot;form[action='#{$url$}'][data-remote='true']&quot;)&#10;end" description="it has remote form" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="underscoresToSpaces(url)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ithrpufo" value="it &quot;has form pointing to $target$&quot; do&#10;  expect(page).to have_selector(&quot;form[action='#{$url$}'][data-remote='true']&quot;)&#10;  expect(page).to have_selector(&quot;input[name='_method'][value='put']&quot;, visible: false)&#10;end" description="it has a put form point to" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="target" expression="underscoresToSpaces(url)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itrjr" value="it &quot;renders a json response&quot; do&#10;  expect(response.header['Content-Type']).to include('text/javascript')&#10;end" description="it renders json response" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itrothtml" value="context &quot;when the request is not for HTML&quot; do&#10;  let(:before_request) do&#10;    @request.env['HTTP_ACCEPT'] = Mime::JSON&#10;  end&#10;&#10;  it &quot;returns a HTTP status of not acceptable&quot; do&#10;    expect(response).to have_http_status(:not_acceptable)&#10;  end&#10;end" description="it responds only to html" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itrotjson" value="context &quot;when the request is not for JSON&quot; do&#10;  let(:before_request) do&#10;    @request.env['HTTP_ACCEPT'] = Mime::HTML&#10;  end&#10;&#10;  it &quot;returns a HTTP status of not acceptable&quot; do&#10;    expect(response).to have_http_status(:not_acceptable)&#10;  end&#10;end" description="it responds only to json" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itrotxhr" value="context &quot;when a non-XHTML request is made&quot; do&#10;  let(:ajax_request) { false }&#10;&#10;  it &quot;returns a HTTP status of method not allowed&quot; do&#10;    expect(response).to have_http_status(:method_not_allowed)&#10;  end&#10;end" description="it responds only to xhr" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itrpwl" value="it &quot;renders the template with the correct locals&quot; do&#10;  allow(controller).to receive(:render).with no_args&#10;  expect(controller).to receive(:render).with(&#10;                          partial: '$template$',&#10;                          locals: { $locals$ }&#10;                        )&#10;&#10;  $request_type$ :$action$, format: :json&#10;end" description="it renders partial with locals" toReformat="false" toShortenFQNames="true">
+    <variable name="template" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="locals" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="request_type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="itrtewl" value="it &quot;renders the template with the correct locals&quot; do&#10;  allow(controller).to receive(:render).with no_args&#10;  expect(controller).to receive(:render).with(&#10;                          '$template$',&#10;                          { $locals$ }&#10;                        )&#10;&#10;  $request_type$ :$action$, format: :json&#10;end" description="it renders partial with locals" toReformat="false" toShortenFQNames="true">
+    <variable name="template" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="locals" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="request_type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="letbf" value="let!(:$VAR$) { create(:$FACTORY$) }" description="let bang factory" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FACTORY" expression="VAR" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="letf" value="let(:$VAR$) { create(:$FACTORY$) }" description="let factory" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FACTORY" expression="VAR" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rspecfeature" value="require 'rails_helper'&#10;&#10;RSpec.feature &quot;$description$&quot;, type: :feature do&#10;&#10;  scenario &quot;$scenario_description$&quot; do&#10;    $END$&#10;  end&#10;end&#10;" description="rspec feature" toReformat="false" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="scenario_description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rspecpartial" value="require 'rails_helper'&#10;&#10;RSpec.describe '$path$', type: :view do&#10;  subject{ JSON.parse rendered }&#10;  let(:$resource$){ create(:$resource2$) }&#10;  &#10;  let(:rendered) do&#10;    render partial: '$path$', locals: { $resource$: $resource$}&#10;  end&#10;&#10;  let(:page) { Capybara::Node::Simple.new(rendered) }&#10;&#10;  $END$&#10;&#10;end&#10;" description="rspec partial" toReformat="false" toShortenFQNames="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="resource" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="resource2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="rspecrequest" value="require 'rails_helper'&#10;&#10;RSpec.feature &quot;$description$&quot;, type: :request do&#10;  &#10;  $END$&#10;  &#10;end&#10;" description="rspec request" toReformat="false" toShortenFQNames="true">
+    <variable name="description" expression="concat(capitalize(underscoresToSpaces(fileNameWithoutExtension())), &quot;:&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="shmc" value="# Shoulda matchers&#10;# - redirect_to&#10;# - respond_with&#10;&#10;# - render_template&#10;# - render_with_layout&#10;&#10;# - set_session&#10;# - set_flash&#10;&#10;# - permit_parameter&#10;&#10;# - rescue_from&#10;&#10;# - use_after_action / user_after_filter&#10;# - user_around_action / user_around_filter&#10;# - use_before_action / use_before_filter" description="shoulda matchers for a controller" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="shmm" value="# Shoulda Matchers:&#10;  # - allow_value&#10;  # - have_secure_password&#10;  # - validate_confirmation_of&#10;  # - validate_exclusion_of&#10;  # - validate_inclusion_of&#10;  # - validate_numericality_of&#10;  # - validate_presence_of&#10;  # - accepts_nested_attributes_for&#10;  # - belongs_to&#10;  # - define_enum_for&#10;  # - have_and_belong_to_many&#10;  # - have_db_column&#10;  # - have_db_index&#10;  # - have_many&#10;  # - have_one&#10;  # - have_readonly_attribute&#10;  # - serialize&#10;  # - validate_uniqueness_of&#10;  # - delegate_method" description="shoulda matchers for a model" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etrmc" value="expect($VARIABLE_1$).to receive_message_chain($VARIABLE_2$)" description="expect to receive message chain" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE_1" expression="" defaultValue="mock" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="message" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etnhr" value="expect($target$).to_not have_received(:$message$)" description="expect to not have received" toReformat="true" toShortenFQNames="true">
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="etej" value="expect(json_response).to eql_json($VALUE$)" description="expect to equal json" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ejrte" value="expect(json_response).to eql($VAL$)" description="expect json response to equal" toReformat="true" toShortenFQNames="true">
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+</templateSet>
