@@ -1,4 +1,7 @@
 <keymap version="1" name="Eclipse (Elementary)" parent="Eclipse (Mac OS X)">
+  <action id="$Copy">
+    <keyboard-shortcut first-keystroke="ctrl c" />
+  </action>
   <action id="$Cut">
     <keyboard-shortcut first-keystroke="shift delete" />
     <keyboard-shortcut first-keystroke="ctrl x" />
@@ -15,6 +18,16 @@
   <action id="Console.TableResult.EditValue">
     <keyboard-shortcut first-keystroke="f2" />
     <keyboard-shortcut first-keystroke="alt enter" />
+  </action>
+  <action id="CopyPaths">
+    <keyboard-shortcut first-keystroke="shift meta c" />
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
+  <action id="CopyReference">
+    <keyboard-shortcut first-keystroke="shift ctrl alt c" />
+  </action>
+  <action id="Editor Copy">
+    <keyboard-shortcut first-keystroke="ctrl c" />
   </action>
   <action id="Editor Cut">
     <keyboard-shortcut first-keystroke="ctrl x" />
@@ -39,6 +52,10 @@
     <keyboard-shortcut first-keystroke="enter" />
     <keyboard-shortcut first-keystroke="ctrl alt enter" />
   </action>
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="shift meta g" />
+    <keyboard-shortcut first-keystroke="shift ctrl g" />
+  </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="shift meta r" />
     <keyboard-shortcut first-keystroke="shift ctrl r" />
@@ -58,8 +75,13 @@
     <keyboard-shortcut first-keystroke="shift ctrl v" />
   </action>
   <action id="RunClass" />
+  <action id="ShowNavBar">
+    <keyboard-shortcut first-keystroke="ctrl alt b" />
+  </action>
   <action id="ShowSettings">
     <keyboard-shortcut first-keystroke="ctrl comma" />
   </action>
+  <action id="TableResult.UnselectPreviousOccurrence" />
+  <action id="UnselectPreviousOccurrence" />
   <action id="Vcs.QuickListPopupAction" />
 </keymap>
