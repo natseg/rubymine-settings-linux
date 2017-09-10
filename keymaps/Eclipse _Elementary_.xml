@@ -44,12 +44,11 @@
     <keyboard-shortcut first-keystroke="ctrl d" />
   </action>
   <action id="EditorEnter" />
-  <action id="EditorStartNewLine">
-    <keyboard-shortcut first-keystroke="shift enter" />
+  <action id="EditorSplitLine">
+    <keyboard-shortcut first-keystroke="meta enter" />
     <keyboard-shortcut first-keystroke="enter" />
   </action>
   <action id="EditorStartNewLineBefore">
-    <keyboard-shortcut first-keystroke="enter" />
     <keyboard-shortcut first-keystroke="ctrl alt enter" />
   </action>
   <action id="FindUsages">
