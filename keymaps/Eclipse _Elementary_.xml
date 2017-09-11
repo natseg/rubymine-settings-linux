@@ -62,7 +62,6 @@
     <keyboard-shortcut first-keystroke="shift ctrl g" />
   </action>
   <action id="GotoFile">
-    <keyboard-shortcut first-keystroke="shift meta r" />
     <keyboard-shortcut first-keystroke="shift ctrl r" />
   </action>
   <action id="HippieCompletion" />
@@ -85,6 +84,9 @@
   </action>
   <action id="ShowSettings">
     <keyboard-shortcut first-keystroke="ctrl comma" />
+  </action>
+  <action id="SplitVertically">
+    <keyboard-shortcut first-keystroke="shift ctrl alt v" />
   </action>
   <action id="TableResult.UnselectPreviousOccurrence" />
   <action id="UnselectPreviousOccurrence" />
