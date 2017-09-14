@@ -10,6 +10,9 @@
     <keyboard-shortcut first-keystroke="shift insert" />
     <keyboard-shortcut first-keystroke="ctrl v" />
   </action>
+  <action id="$SelectAll">
+    <keyboard-shortcut first-keystroke="ctrl a" />
+  </action>
   <action id="$Undo">
     <keyboard-shortcut first-keystroke="meta z" />
     <keyboard-shortcut first-keystroke="ctrl z" />
@@ -35,6 +38,9 @@
   <action id="Editor Paste">
     <keyboard-shortcut first-keystroke="ctrl v" />
   </action>
+  <action id="Editor SelectAll">
+    <keyboard-shortcut first-keystroke="ctrl a" />
+  </action>
   <action id="Editor Undo">
     <keyboard-shortcut first-keystroke="ctrl z" />
   </action>
@@ -43,7 +49,14 @@
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="ctrl d" />
   </action>
+  <action id="EditorDown">
+    <keyboard-shortcut first-keystroke="down" />
+  </action>
   <action id="EditorEnter" />
+  <action id="EditorLineStart">
+    <keyboard-shortcut first-keystroke="home" />
+    <keyboard-shortcut first-keystroke="meta left" />
+  </action>
   <action id="EditorRight">
     <keyboard-shortcut first-keystroke="right" />
   </action>
@@ -70,6 +83,12 @@
     <keyboard-shortcut first-keystroke="ctrl period" />
   </action>
   <action id="Jdbc.RunSqlScript" />
+  <action id="NewElement">
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
+  <action id="NewScratchFile">
+    <keyboard-shortcut first-keystroke="shift ctrl n" />
+  </action>
   <action id="NextTemplateVariable">
     <keyboard-shortcut first-keystroke="tab" />
   </action>
@@ -79,6 +98,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl v" />
   </action>
   <action id="RunClass" />
+  <action id="SelectAllOccurrences">
+    <keyboard-shortcut first-keystroke="ctrl alt g" />
+  </action>
   <action id="ShowNavBar">
     <keyboard-shortcut first-keystroke="ctrl alt b" />
   </action>
